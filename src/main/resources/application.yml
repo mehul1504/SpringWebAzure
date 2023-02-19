@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://mysqldb123.database.windows.net:1433;database=employeeDb;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: root123
+    password: root@123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect : org.hibernate.dialect.SQLServer2012Dialect
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  port: 9191
+
